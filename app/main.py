@@ -2,7 +2,7 @@ import sys
 
 
 def main():
-    print("Demo app is alive. Python:", sys.version)
+    print(cnt)
 
 
 if __name__ == "__main__":
