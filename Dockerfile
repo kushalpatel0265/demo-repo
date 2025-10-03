@@ -17,4 +17,4 @@ COPY app ./app
 RUN python -m compileall -q app
 
 # Run command (simple CLI app)
-CMD ["python", "-m", "app.main"]
+CMD ["python","app/main.py"]
