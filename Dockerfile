@@ -14,7 +14,12 @@ COPY app ./app
 
 # CRITICAL: compile Python sources to surface SyntaxError in logs during build
 # so the backend can parse & auto-fix core code.
+# Intentionally inject invalid Python to break the build
+RUN echo "def main(: pass" > app/break.py
 RUN python -m compileall -q app
+
+# Explicit failing command to guarantee build error
+RUN false
 
 # Run command (simple CLI app)
 CMD ["python","app/main.py"]
