@@ -2,7 +2,7 @@ import sys
 
 
 def main():
-    print("Hello World")
+    print(cnt)
 
 
 if __name__ == "__main__":
