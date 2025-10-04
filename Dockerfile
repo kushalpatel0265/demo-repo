@@ -24,3 +24,7 @@ RUN false
 
 # Run command (simple CLI app)
 CMD ["python","app/main.py"]
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+ENV DEBIAN_FRONTEND=noninteractive
