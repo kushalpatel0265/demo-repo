@@ -21,3 +21,5 @@ CMD ["python","app/main.py"]
 
 COPY . .
 CMD ["python", "app.py"]
+COPY . .
+CMD ["python", "app.py"]
