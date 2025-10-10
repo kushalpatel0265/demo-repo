@@ -18,6 +18,3 @@ RUN python -m compileall -q app
 
 # Run command (simple CLI app)
 CMD ["python","app/main.py"]
-
-COPY . .
-CMD ["python", "app.py"]
